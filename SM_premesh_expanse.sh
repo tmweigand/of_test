@@ -3,15 +3,13 @@
 #SBATCH --output="domain_generation.%j.%N.out"
 #SBATCH --partition=compute
 #SBATCH --nodes=1
-#SBATCH --ntasks-per-node=100
+#SBATCH --ntasks-per-node=1
 #SBATCH --mem=0 
 #SBATCH --account=nca125
 #SBATCH --export=ALL
-#SBATCH -t 48:00:00
+#SBATCH -t 01:00:00
 
 # /expanse/lustre/projects/nca125/tweigand
-
-#This job runs with 1 nodes, 125 cores per node for a total of 128 tasks.
 
 module purge
 module load cpu
